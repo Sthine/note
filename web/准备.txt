@@ -15,16 +15,22 @@
 
 创建基本的文件结构
   flask #根目录
-	app  #放置应用程序包
-		static #存放静态文件，如图片，js文件，样式文件
-		templates #存放模版文件
+  
+	/app  #放置应用程序包
+	
+		/static #存放静态文件，如图片，js文件，样式文件
+		
+		/templates #存放模版文件
+		
 		__init__.py #初始化脚本
 			from flask import Flask
-			
 			app = Flask(__name__)
 			from app import views
-	tmp
-  run.py #启动我们的应用程序的开发web服务器,要明确他是一个可执行文件，然后可以运          行他 chmod a+x run.py   然后脚本可以简单的如此执行： ./run.py
+			
+	/tmp
+	
+  run.py #启动我们的应用程序的开发web服务器,要明确他是一个可执行文件，然后可以运行他 chmod a+x run.py  然后脚本可以简           单的如此执行： ./run.py
+  
 	#！flask/bin/python
 	from app import app
 	app.run(debug = True)

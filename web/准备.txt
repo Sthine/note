@@ -1,0 +1,36 @@
+激活虚拟环境，然后安装flask及扩展：
+	$ flask/bin/pip install flask
+	$ flask/bin/pip install flask-login
+	$ flask/bin/pip install flask-openid
+	$ flask/bin/pip install flask-mail
+	$ flask/bin/pip install flask-sqlalchemy
+	$ flask/bin/pip install sqlalchemy-migrate
+	$ flask/bin/pip install flask-whooshalchemy
+	$ flask/bin/pip install flask-wtf
+	$ flask/bin/pip install flask-babel
+	$ flask/bin/pip install guess_language
+	$ flask/bin/pip install flipflop
+	$ flask/bin/pip install coverage
+
+
+创建基本的文件结构
+  flask #根目录
+	app  #放置应用程序包
+		static #存放静态文件，如图片，js文件，样式文件
+		templates #存放模版文件
+		__init__.py #初始化脚本
+			from flask import Flask
+			
+			app = Flask(__name__)
+			from app import views
+	tmp
+  run.py #启动我们的应用程序的开发web服务器,要明确他是一个可执行文件，然后可以运          行他 chmod a+x run.py   然后脚本可以简单的如此执行： ./run.py
+	#！flask/bin/python
+	from app import app
+	app.run(debug = True)
+
+
+服务器监听的端口
+	http://localhost:5000 
+        http://localhost:5000/index
+

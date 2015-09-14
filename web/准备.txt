@@ -29,7 +29,7 @@
 			
 	/tmp
 	
-  run.py #启动我们的应用程序的开发web服务器,要明确他是一个可执行文件，然后可以运行他 chmod a+x run.py  然后脚本可以简           单的如此执行： ./run.py
+  run.py #启动我们的应用程序的开发web服务器,要明确他是一个可执行文件，然后可以运行他 chmod a+x run.py  然后脚本可以简单的如此执行： ./run.py
   
 	#！flask/bin/python
 	from app import app
